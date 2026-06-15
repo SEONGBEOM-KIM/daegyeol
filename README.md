@@ -47,6 +47,24 @@ npm run test:m1
 npm run test:m3
 ```
 
+로그인·로그아웃 구조 자동 검증:
+
+```bash
+npm run test:m4
+```
+
+사전 성향 질문 구조 자동 검증:
+
+```bash
+npm run test:m5
+```
+
+고민·선택지 입력 구조 자동 검증:
+
+```bash
+npm run test:m6
+```
+
 프로덕션 빌드 검증:
 
 ```bash

@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test:m1": "node scripts/check-m1-homepage.mjs",
-    "test:m3": "node scripts/check-m3-signup.mjs"
+    "test:m3": "node scripts/check-m3-signup.mjs",
+    "test:m4": "node scripts/check-m4-auth.mjs",
+    "test:m5": "node scripts/check-m5-preferences.mjs",
+    "test:m6": "node scripts/check-m6-decisions.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

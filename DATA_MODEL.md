@@ -167,13 +167,26 @@ recommendations.selected_option_id → options.id
 
 ## 성향 질문 답변 저장 방식
 
-첫 MVP에서는 별도 테이블을 만들지 않고 `profiles.preference_summary`에 요약본을 저장하는 방식으로 시작한다.
+첫 MVP에서는 별도 테이블을 만들지 않고 `profiles.preference_summary`에 다섯 질문의 답변을 JSON 문자열로 저장한다.
+
+예시:
+
+```json
+{
+  "priority": "quality",
+  "risk": "balanced",
+  "budget": "flexible",
+  "convenience": "convenient",
+  "decision_style": "comparison"
+}
+```
 
 이유:
 
 - M2의 목표는 최소 사용자 계정 모델을 정하는 것이다.
-- 사전 질문 문항이 아직 확정되지 않았다.
+- 첫 질문 세트는 여러 선택 분야에 공통으로 사용하는 고정된 5개 문항이다.
 - 처음부터 질문/답변 테이블을 만들면 범위가 커진다.
+- 기존 `profiles` RLS를 그대로 사용해 사용자별 답변을 분리할 수 있다.
 
 추후 확장 시 다음 테이블을 추가할 수 있다.
 

@@ -239,11 +239,24 @@ h1 {
   color: #8c2118;
 }
 
+.formSuccess {
+  border: 1px solid #a8d5af;
+  background: #effaf0;
+  color: #176b2c;
+}
+
 .authFootnote {
   margin: 24px 0 0;
   color: var(--muted);
   font-size: 14px;
   text-align: center;
+}
+
+.textLink {
+  color: var(--foreground);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .authResult {
@@ -262,4 +275,356 @@ h1 {
   color: #176b2c;
   font-size: 28px;
   font-weight: 900;
+}
+
+.accountCard {
+  width: min(100%, 620px);
+}
+
+.accountNotice {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 22px;
+}
+
+.accountNotice h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.accountNotice p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.accountPreferenceLink {
+  margin-top: 18px;
+}
+
+.accountActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.accountActions form {
+  margin: 0;
+}
+
+.decisionSummary {
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 22px;
+}
+
+.decisionSummaryHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sectionLabel {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.decisionSummary h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.decisionList {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.decisionList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.decisionList span {
+  flex: none;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.emptyState {
+  margin: 20px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.preferencesPage {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.preferencesContainer {
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: rgba(255, 250, 240, 0.92);
+  padding: clamp(28px, 6vw, 56px);
+  box-shadow: 0 24px 70px rgba(31, 31, 31, 0.1);
+}
+
+.preferencesHeading {
+  display: grid;
+  gap: 18px;
+  margin: 32px 0 40px;
+}
+
+.preferencesHeading h1 {
+  font-size: clamp(40px, 8vw, 72px);
+}
+
+.preferencesHeading > p:last-child {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.preferencesForm {
+  display: grid;
+  gap: 20px;
+}
+
+.preferenceQuestion {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.preferenceQuestion legend {
+  display: grid;
+  gap: 8px;
+  padding: 0 8px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.preferenceQuestion legend span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.preferenceQuestion > p {
+  margin: 8px 0 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.preferenceOptions {
+  display: grid;
+  gap: 10px;
+}
+
+.preferenceOptions label {
+  display: flex;
+  min-height: 50px;
+  cursor: pointer;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 700;
+}
+
+.preferenceOptions label:has(input:checked) {
+  border-color: var(--primary);
+  background: #fff4c9;
+}
+
+.preferenceOptions input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+
+.preferencesSubmit {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  justify-self: start;
+  margin-top: 8px;
+}
+
+.decisionPage {
+  width: min(820px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.decisionContainer {
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: rgba(255, 250, 240, 0.92);
+  padding: clamp(28px, 6vw, 56px);
+  box-shadow: 0 24px 70px rgba(31, 31, 31, 0.1);
+}
+
+.decisionHeading {
+  display: grid;
+  gap: 18px;
+  margin: 32px 0 40px;
+}
+
+.decisionHeading h1 {
+  font-size: clamp(40px, 8vw, 72px);
+}
+
+.decisionHeading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.decisionForm {
+  display: grid;
+  gap: 24px;
+}
+
+.decisionTextField {
+  display: grid;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.decisionTextField > span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.decisionTextField input,
+.decisionTextField textarea,
+.optionField input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--foreground);
+  padding: 14px;
+  font: inherit;
+}
+
+.decisionTextField input,
+.optionField input {
+  min-height: 50px;
+}
+
+.decisionTextField textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.decisionOptions {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.decisionOptions legend {
+  padding: 0 8px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.decisionOptions > p {
+  margin: 6px 0 18px;
+  color: var(--muted);
+}
+
+.optionFields {
+  display: grid;
+  gap: 14px;
+}
+
+.optionField {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionField label {
+  font-weight: 800;
+}
+
+.removeOptionButton {
+  border: 0;
+  background: transparent;
+  color: #8c2118;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.addOptionButton {
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font: inherit;
+  margin-top: 16px;
+}
+
+.decisionSubmit {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  justify-self: start;
+}
+
+@media (max-width: 600px) {
+  .preferencesPage {
+    padding: 24px 0 48px;
+  }
+
+  .preferenceQuestion {
+    padding: 20px 16px;
+  }
+
+  .decisionPage {
+    padding: 24px 0 48px;
+  }
+
+  .decisionOptions {
+    padding: 20px 16px;
+  }
+
+  .optionField {
+    grid-template-columns: 1fr auto;
+  }
+
+  .optionField label {
+    grid-column: 1 / -1;
+  }
+
+  .decisionSummaryHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

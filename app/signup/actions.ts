@@ -56,5 +56,9 @@ export async function signup(formData: FormData) {
     redirectWithError("회원가입 결과를 확인할 수 없습니다.");
   }
 
+  if (data.session) {
+    redirect("/account");
+  }
+
   redirect("/signup/success");
 }

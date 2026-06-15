@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
   const code = searchParams.get("code");
   const destination = request.nextUrl.clone();
 
-  destination.pathname = "/signup/success";
+  destination.pathname = "/account";
   destination.search = "";
 
   const supabase = await createClient();

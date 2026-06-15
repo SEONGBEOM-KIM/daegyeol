@@ -74,7 +74,10 @@ export default async function SignupPage({ searchParams }: SignupPageProps) {
         </form>
 
         <p className="authFootnote">
-          첫 MVP는 이메일과 비밀번호 로그인만 지원합니다.
+          이미 계정이 있나요?{" "}
+          <Link className="textLink" href="/login">
+            로그인
+          </Link>
         </p>
       </section>
     </main>

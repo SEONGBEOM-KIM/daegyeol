@@ -14,6 +14,9 @@ export default function Home() {
           <Link className="primaryAction" href="/signup">
             시작하기
           </Link>
+          <Link className="secondaryAction" href="/login">
+            로그인
+          </Link>
           <a className="secondaryAction" href="#how-it-works">
             어떻게 도와주나요?
           </a>
